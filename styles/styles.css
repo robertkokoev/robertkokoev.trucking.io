@@ -1,0 +1,89 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+}
+  
+body {
+    color: white;
+    font-family: 'Montserrat';
+    background-image: linear-gradient(to bottom, rgba(20,47,79, 0.9), rgba(0,0,0, 0.6)), url(../assets/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+section {
+    display: grid;
+    justify-items: center;
+    align-content: space-between;
+    gap: 32px;
+    height: 100%;
+    margin: 0 200px;
+}
+
+.head {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    width: 100%;
+    padding: 32px;
+}
+
+.head .title {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.contacts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.contacts .name {
+    font-size: 2.25rem;
+    display: flex;
+    align-items: center;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding-bottom: 32px;
+    justify-content: center;
+}
+
+.cards .wrap {
+    display: flex;
+    grid-gap: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .contacts {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    html {
+        font-size: 14px;
+    }
+
+    section {
+        margin: 0 20px;
+    }
+
+    .contacts {
+        grid-template-columns: 1fr;
+    }
+
+    .head .title {
+        font-size: 1.5rem;
+    }
+}

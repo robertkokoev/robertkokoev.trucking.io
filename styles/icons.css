@@ -1,0 +1,53 @@
+.icon,
+.large-icon {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.icon {
+    width: 2rem;
+    height: 2rem;
+}
+
+.large-icon {
+    width: 4rem;
+    height: 4rem;
+}
+
+.hours {
+    filter: invert(1);
+    background-image: url(../icons/24-hours.png);
+}
+
+.telegram {
+    background-image: url(../icons/telegram.svg);
+}
+
+.whatsapp {
+    background-image: url(../icons/whatsapp.svg);
+}
+
+.truck {
+    background-image: url(../icons/truck.png);
+}
+
+.loader {
+    background-image: url(../icons/loader.png);
+}
+
+.techniq {
+    background-image: url(../icons/techniq.png);
+}
+
+.furniture {
+    background-image: url(../icons/furniture.png);
+}
+
+.mallet {
+    background-image: url(../icons/mallet.png);
+}
+
+.garbage {
+    background-image: url(../icons/garbage.png);
+}
