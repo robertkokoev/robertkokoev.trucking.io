@@ -26,7 +26,7 @@ section {
     position: relative;
     width: 100%;
     align-items: center;
-    background-image: url(https://leasing.ru/storagefile/leasingru/de50a159-296d-437d-907e-081692dd39b6);
+    background-image: url(../assets//banner.jpg);
     box-shadow: inset 1000px 1000px rgba(0, 0, 0, 0.5);
     background-position: center center;
     background-size: cover;
