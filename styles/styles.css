@@ -39,6 +39,12 @@ section {
     text-align: center;
 }
 
+.head .domain {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+
 .contacts {
     display: grid;
     grid-template-columns: 1fr 1fr;
