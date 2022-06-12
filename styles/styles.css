@@ -7,13 +7,7 @@ body {
 }
   
 body {
-    color: white;
     font-family: 'Montserrat';
-    background-image: linear-gradient(to bottom, rgba(20,47,79, 0.9), rgba(0,0,0, 0.6)), url(../assets/background.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
 }
 
 section {
@@ -22,16 +16,22 @@ section {
     align-content: space-between;
     gap: 32px;
     height: 100%;
-    margin: 0 200px;
 }
 
 .head {
+    color: white;
     display: flex;
     justify-content: center;
     gap: 20px;
     position: relative;
     width: 100%;
-    padding: 32px;
+    align-items: center;
+    background-image: url(https://leasing.ru/storagefile/leasingru/de50a159-296d-437d-907e-081692dd39b6);
+    box-shadow: inset 1000px 1000px rgba(0, 0, 0, 0.5);
+    background-position: center center;
+    background-size: cover;
+    height: 40vh;
+    width: 100vw;
 }
 
 .head .title {
@@ -73,10 +73,6 @@ section {
 @media screen and (max-width: 1200px) {
     html {
         font-size: 14px;
-    }
-
-    section {
-        margin: 0 20px;
     }
 
     .contacts {
