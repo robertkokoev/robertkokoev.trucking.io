@@ -1,4 +1,4 @@
-button {
+a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -8,22 +8,19 @@ button {
     border: 3px solid white;
     border-radius: 5px;
     font-size: 1.75rem;
-    cursor: pointer;
     transition: background-color .3s;
     box-sizing: border-box;
     color: white;
-    margin: 0;
     text-decoration: none;
-    background: none;
     font-family: 'Montserrat';
 }
 
-button:hover {
+a:hover {
     background: white;
     color: black;
 }
 
-button:hover .icon {
+a:hover .icon {
     filter: invert(1);
 }
 
