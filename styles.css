@@ -1,0 +1,198 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+}
+  
+body {
+    color: white;
+    font-family: 'Montserrat';
+    background-image: linear-gradient(to bottom, rgba(20,47,79, 0.9), rgba(0,0,0, 0.6)), url(./assets/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+section {
+    display: grid;
+    justify-items: center;
+    align-content: space-between;
+    gap: 32px;
+    height: 100%;
+    margin: 0 200px;
+}
+
+.title {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.contacts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    width: 300px;
+    height: 64px;
+    border: 3px solid white;
+    border-radius: 5px;
+    font-size: 1.75rem;
+    cursor: pointer;
+    transition: background-color .3s;
+    box-sizing: border-box;
+    color: white;
+    margin: 0;
+    text-decoration: none;
+    background: none;
+    font-family: 'Montserrat';
+}
+
+button:hover {
+    background: white;
+    color: black;
+}
+
+button:hover .icon {
+    filter: invert(1);
+}
+
+.name {
+    font-size: 2.25rem;
+    display: flex;
+    align-items: center;
+}
+
+.hours {
+    height: 64px !important;
+    width: 64px !important;
+    filter: invert(1);
+    background-image: url(./icons/24-hours.png);
+
+    /* position: absolute; */
+    /* left: 32px; */
+    /* top: 42px; */
+}
+
+.telegram {
+    background-image: url(./icons/telegram.svg);
+}
+
+.whatsapp {
+    background-image: url(./icons/whatsapp.svg);
+}
+
+.head {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    width: 100%;
+    padding: 32px;
+}
+
+.icon {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 32px;
+    height: 32px;
+}
+
+.large-icon {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 64px;
+    height: 64px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding-bottom: 32px;
+    justify-content: center;
+}
+
+.wrap {
+    display: flex;
+    grid-gap: 20px;
+}
+
+.card {
+    display: grid;
+    justify-items: center;
+    gap: 8px;
+    background-color: rgba(255, 255, 255, 0.85);
+    color: black;
+    padding: 16px;
+    border-radius: 10px;
+    width: 160px;
+    box-sizing: border-box;
+}
+
+.truck {
+    background-image: url(./icons/truck.png);
+}
+
+.loader {
+    background-image: url(./icons/loader.png);
+}
+
+.techniq {
+    background-image: url(./icons/techniq.png);
+}
+
+.furniture {
+    background-image: url(./icons/furniture.png);
+}
+
+.mallet {
+    background-image: url(./icons/mallet.png);
+}
+
+.garbage {
+    background-image: url(./icons/garbage.png);
+}
+
+.card-name {
+    text-align: center;
+}
+
+
+@media screen and (max-width: 768px) {
+    section {
+        margin: 0 20px;
+    }
+
+    .contacts {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    html {
+        font-size: 14px;
+    }
+
+    section {
+        margin: 0 20px;
+    }
+
+    .contacts {
+        grid-template-columns: 1fr;
+    }
+
+    /* .cards {
+        grid-template-columns: repeat(3, 1fr);
+    } */
+}
